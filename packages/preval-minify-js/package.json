@@ -1,0 +1,22 @@
+{
+  "name": "preval-minify-js",
+  "version": "0.0.1",
+  "main": "./dist/minify.macro.js",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "babel-plugin-macros": "^2.8.0",
+    "deepmerge": "^4.2.2",
+    "do-sync": "^2.2.0",
+    "terser": "^5.3.8"
+  },
+  "devDependencies": {
+    "@babel/helper-plugin-test-runner": "^7.10.4",
+    "microbundle": "0.13.0-0"
+  },
+  "scripts": {
+    "build": "microbundle -i src/minify.macro.js -f cjs --target=node",
+    "test": "yarn build && yarn test:jest"
+  }
+}
