@@ -2228,7 +2228,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^9.8.0":
+"autoprefixer@npm:^9.4.7, autoprefixer@npm:^9.8.0":
   version: 9.8.6
   resolution: "autoprefixer@npm:9.8.6"
   dependencies:
@@ -3113,6 +3113,20 @@ __metadata:
   bin:
     cssesc: bin/cssesc
   checksum: 673783eda1f89af3faefc0e4b833f40621f484ce102a23396e7a65cc4c42798bd91ee3656c8b04a0a5ca38d40ada5bc8663e4541c380a7a81af2de5b2322e443
+  languageName: node
+  linkType: hard
+
+"cssnano-preset-advanced@npm:^4.0.7":
+  version: 4.0.7
+  resolution: "cssnano-preset-advanced@npm:4.0.7"
+  dependencies:
+    autoprefixer: ^9.4.7
+    cssnano-preset-default: ^4.0.7
+    postcss-discard-unused: ^4.0.1
+    postcss-merge-idents: ^4.0.1
+    postcss-reduce-idents: ^4.0.2
+    postcss-zindex: ^4.0.1
+  checksum: 17dba8f9658f2b0064c5c802a79346bea3922ff528abfb52b365f21300c2897397992f2f426520586d160bc56d0bd8681a8c18153ae6ef714d99708f18f4eb42
   languageName: node
   linkType: hard
 
@@ -7089,6 +7103,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"postcss-discard-unused@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "postcss-discard-unused@npm:4.0.1"
+  dependencies:
+    postcss: ^7.0.0
+    postcss-selector-parser: ^3.0.0
+    uniqs: ^2.0.0
+  checksum: 1eb42d69f0f2a62546eee8699a94c302aa1c32fec5f2de0e813f3dceac57300b4dc66ee08d2b6564835ceb5e3e798b2001ea582334e5fb066a40df0961be4aa2
+  languageName: node
+  linkType: hard
+
 "postcss-load-config@npm:^2.1.0":
   version: 2.1.2
   resolution: "postcss-load-config@npm:2.1.2"
@@ -7096,6 +7121,18 @@ fsevents@~2.1.2:
     cosmiconfig: ^5.0.0
     import-cwd: ^2.0.0
   checksum: b79ecb38d57e82f4a86d07c887783cba0d8976d5b0860b9708ed70c5bd02b1b8317de73abcae56210aa3cc213af6f7c649f5c87380adb42d76be8b08ebd1193c
+  languageName: node
+  linkType: hard
+
+"postcss-merge-idents@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "postcss-merge-idents@npm:4.0.1"
+  dependencies:
+    cssnano-util-same-parent: ^4.0.0
+    has: ^1.0.0
+    postcss: ^7.0.0
+    postcss-value-parser: ^3.0.0
+  checksum: 101e56785c87aee30a2772a02d651b41284178ee564f79b725c14f2ee094b7833bfdb7fdf405aa7807101506599a78fd8156b4c5f3ccf01646b3edadb1edf57c
   languageName: node
   linkType: hard
 
@@ -7335,6 +7372,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"postcss-reduce-idents@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "postcss-reduce-idents@npm:4.0.2"
+  dependencies:
+    postcss: ^7.0.0
+    postcss-value-parser: ^3.0.0
+  checksum: 8209184e3a9e86dfeebbe8993b8c542e358e5aa2326e3902a41f4eb46680050fee4c106637f96a8b6bb9cd99434c7a16feba9dde9b85b3415f158bc82eafade8
+  languageName: node
+  linkType: hard
+
 "postcss-reduce-initial@npm:^4.0.3":
   version: 4.0.3
   resolution: "postcss-reduce-initial@npm:4.0.3"
@@ -7419,6 +7466,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"postcss-zindex@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "postcss-zindex@npm:4.0.1"
+  dependencies:
+    has: ^1.0.0
+    postcss: ^7.0.0
+    uniqs: ^2.0.0
+  checksum: 17b74ff8e2349caadaff4802e4a71a14ac72694997be1584dc8a5713740c607fde31a4f2a1cb89a320623007cb2e6acfd46fb2ca7b2d3cd19802c21f87543475
+  languageName: node
+  linkType: hard
+
 "postcss@npm:6.0.1":
   version: 6.0.1
   resolution: "postcss@npm:6.0.1"
@@ -7441,7 +7499,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:^7.0.0, postcss@npm:^7.0.1, postcss@npm:^7.0.27, postcss@npm:^7.0.32":
+"postcss@npm:^7.0.0, postcss@npm:^7.0.1, postcss@npm:^7.0.27, postcss@npm:^7.0.32, postcss@npm:^7.0.35":
   version: 7.0.35
   resolution: "postcss@npm:7.0.35"
   dependencies:
@@ -7514,6 +7572,21 @@ fsevents@~2.1.2:
   checksum: 5ad34fc128218485732cf0271d396158a00584708fc97bf063c1c3c000fe14da572e9a1d3d7b92d95c5e24965434656c56ed0e45804dea2435ca59a1f86f1b07
   languageName: node
   linkType: hard
+
+"preval-minify-css@workspace:packages/preval-minify-css":
+  version: 0.0.0-use.local
+  resolution: "preval-minify-css@workspace:packages/preval-minify-css"
+  dependencies:
+    "@babel/helper-plugin-test-runner": ^7.10.4
+    babel-plugin-macros: ^2.8.0
+    cssnano: ^4.1.10
+    cssnano-preset-advanced: ^4.0.7
+    deepmerge: ^4.2.2
+    do-sync: ^2.2.0
+    microbundle: 0.13.0-0
+    postcss: ^7.0.35
+  languageName: unknown
+  linkType: soft
 
 "preval-minify-js@workspace:packages/preval-minify-js":
   version: 0.0.0-use.local
