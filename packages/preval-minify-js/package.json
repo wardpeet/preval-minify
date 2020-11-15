@@ -1,5 +1,5 @@
 {
-  "name": "preval-minify-js",
+  "name": "preval-minify-js.macro",
   "version": "0.0.1",
   "main": "./dist/minify.macro.js",
   "files": [
@@ -16,7 +16,7 @@
     "microbundle": "0.13.0-0"
   },
   "scripts": {
-    "build": "microbundle -i src/minify.macro.js -f cjs --target=node",
+    "build": "microbundle -i src/minify.macro.js -f cjs --target=node --sourcemap=false",
     "test": "yarn build && yarn test:jest"
   }
 }

@@ -12,5 +12,4 @@ const x = minifyCss({
   .myClass2 {
     z-index: 888;
   }
-  
 `;

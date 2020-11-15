@@ -7573,9 +7573,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"preval-minify-css@workspace:packages/preval-minify-css":
+"preval-minify-css.macro@workspace:packages/preval-minify-css":
   version: 0.0.0-use.local
-  resolution: "preval-minify-css@workspace:packages/preval-minify-css"
+  resolution: "preval-minify-css.macro@workspace:packages/preval-minify-css"
   dependencies:
     "@babel/helper-plugin-test-runner": ^7.10.4
     babel-plugin-macros: ^2.8.0
@@ -7588,9 +7588,9 @@ fsevents@~2.1.2:
   languageName: unknown
   linkType: soft
 
-"preval-minify-js@workspace:packages/preval-minify-js":
+"preval-minify-js.macro@workspace:packages/preval-minify-js":
   version: 0.0.0-use.local
-  resolution: "preval-minify-js@workspace:packages/preval-minify-js"
+  resolution: "preval-minify-js.macro@workspace:packages/preval-minify-js"
   dependencies:
     "@babel/helper-plugin-test-runner": ^7.10.4
     babel-plugin-macros: ^2.8.0
