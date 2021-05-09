@@ -24,7 +24,9 @@ function minifyMacro({ references }) {
       const string = getTemplateExpressionContent(referencePath.parentPath);
 
       const result = minify(string);
-      referencePath.parentPath.replaceWithSourceString(`\`${result.code}\``);
+      referencePath.parentPath.replaceWithSourceString(
+        `\`${result.code.replace(/\${/g, '\\${').replace(/`/g, '\\`')}\``,
+      );
     } else if (referencePath.parentPath.type === 'CallExpression') {
       const options = referencePath.parentPath.get('arguments')[0].evaluate()
         .value;
@@ -33,12 +35,10 @@ function minifyMacro({ references }) {
       );
 
       const result = minify(string, options);
-
       referencePath.parentPath.parentPath.replaceWithSourceString(
-        `\`${result.code}\``,
+        `\`${result.code.replace(/\${/g, '\\${').replace(/`/g, '\\`')}\``,
       );
     }
   });
 }
-
 export default createMacro(minifyMacro);

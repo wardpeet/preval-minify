@@ -40,9 +40,10 @@ export const minify = (code, options = {}) => {
     const cssNano = require('cssnano');
 
     try {
-      return await postcss({
-        plugins: [cssNano(nanoOptions)],
-      }).process(input, { from: undefined, to: undefined });
+      return await postcss([cssNano(nanoOptions)]).process(input, {
+        from: undefined,
+        to: undefined,
+      });
     } catch (err) {
       return {
         error: err.message,
