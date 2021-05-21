@@ -24,7 +24,7 @@ Minify your "dynamic" code snippets at build time.
 ### Minify JS:
 
 ```js
-const jsMinify = require('preval-minify-js');
+const jsMinify = require('preval-minify-js.macro');
 const snippet = jsMinify`
   (function() {
     var myCoolText = 'hello';
@@ -48,7 +48,7 @@ document.body.appendChild(testScript);
 ### Minify CSS:
 
 ```js
-const cssMinify = require('preval-minify-css');
+const cssMinify = require('preval-minify-css.macro');
 const snippet = cssMinify`
   .image {
     border-radius: 5px;
