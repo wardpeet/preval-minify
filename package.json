@@ -5,17 +5,17 @@
     "packages/*"
   ],
   "devDependencies": {
-    "eslint": "^7.26.0",
-    "eslint-config-airbnb-base": "14.2.1",
-    "eslint-import-resolver-node": "^0.3.4",
-    "eslint-plugin-import": "^2.22.1",
-    "husky": "^6.0.0",
-    "jest": "^26.6.3",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.2.1"
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.4.0",
+    "prettier": "^2.6.2"
   },
   "scripts": {
-    "build": "yarn workspaces foreach run build",
+    "build": "yarn plugin import workspace-tools run build",
     "test:jest": "cd $INIT_CWD && jest",
     "test": "yarn workspaces foreach -vt run test",
     "postinstall": "husky install"
@@ -25,5 +25,6 @@
     "*.js": [
       "eslint --fix"
     ]
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }
