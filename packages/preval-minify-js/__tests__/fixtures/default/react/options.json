@@ -1,0 +1,7 @@
+{
+  "compact": true,
+  "plugins": [
+    "babel-plugin-macros",
+    "@babel/plugin-syntax-jsx"
+  ]
+}

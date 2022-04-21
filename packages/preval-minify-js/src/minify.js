@@ -3,8 +3,12 @@ import merge from 'deepmerge';
 
 const DEFAULT_OPTIONS = {
   sourceMap: false,
+  module: true,
   mangle: {
     toplevel: true,
+  },
+  compress: {
+    passes: 2,
   },
 };
 

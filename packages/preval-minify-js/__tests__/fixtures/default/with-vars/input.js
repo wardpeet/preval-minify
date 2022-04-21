@@ -1,15 +1,13 @@
 const minifyJs = require('../../../../dist/minify.macro');
 
-minifyJs({
-  format: {
-    beautify: true,
-  },
-})`
+const x = 'Bob'
+
+minifyJs`
   const hello = 'Hello';
 
   function greetings(name) {
     return \`\${hello} \${name}\`
   }
 
-  console.log(greetings('Bob'));
+  console.log(greetings("${x}"));
 `;
