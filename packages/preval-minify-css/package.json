@@ -7,15 +7,15 @@
   ],
   "dependencies": {
     "babel-plugin-macros": "^3.1.0",
-    "cssnano": "^5.1.7",
+    "cssnano": "^5.1.12",
     "deepmerge": "^4.2.2",
-    "do-sync": "^3.0.13",
-    "postcss": "^8.4.12"
+    "do-sync": "^3.1.1",
+    "postcss": "^8.4.14"
   },
   "devDependencies": {
     "@babel/helper-plugin-test-runner": "^7.16.7",
-    "cssnano-preset-advanced": "^5.3.3",
-    "microbundle": "0.14.2"
+    "cssnano-preset-advanced": "^5.3.8",
+    "microbundle": "0.15.0"
   },
   "scripts": {
     "build": "microbundle -i src/minify.macro.js -f cjs --target=node --sourcemap=false",

@@ -1,5 +1,4 @@
 module.exports = {
-  name: 'preval-minify-css',
   displayName: 'preval-minify-css',
   rootDir: __dirname,
   testEnvironment: 'node',
