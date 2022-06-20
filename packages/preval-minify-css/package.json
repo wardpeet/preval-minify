@@ -1,6 +1,6 @@
 {
   "name": "preval-minify-css.macro",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "./dist/minify.macro.js",
   "files": [
     "dist/"
