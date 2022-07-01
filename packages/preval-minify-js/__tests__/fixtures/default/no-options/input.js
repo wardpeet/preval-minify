@@ -1,6 +1,6 @@
 const minifyJs = require('../../../../dist/minify.macro');
 
-minifyJs`
+const myCode = minifyJs`
   const hello = 'Hello'
 
   function greetings(name) {

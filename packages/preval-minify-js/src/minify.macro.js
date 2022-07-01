@@ -1,5 +1,4 @@
 import { createMacro } from 'babel-plugin-macros';
-import template from '@babel/template';
 import { minify } from './minify';
 
 /**
@@ -24,7 +23,7 @@ function minifyMacro({ references }) {
     if (referencePath.parentPath.type === 'TaggedTemplateExpression') {
       const string = getTemplateExpressionContent(referencePath.parentPath);
       const result = minify(string);
-      referencePath.parentPath.replaceWith(template.statement.ast(result.code));
+      referencePath.parentPath.replaceWithSourceString(`\`${result.code}\``);
     } else if (referencePath.parentPath.type === 'CallExpression') {
       const options = referencePath.parentPath
         .get('arguments')[0]
@@ -34,9 +33,7 @@ function minifyMacro({ references }) {
       );
 
       const result = minify(string, options);
-      referencePath.parentPath.parentPath.replaceWith(
-        template.statement.ast(result.code),
-      );
+      referencePath.parentPath.replaceWithSourceString(`\`${result.code}\``);
     }
   });
 }

@@ -1,2 +1,3 @@
 const x = 'Bob';
-console.log("Hello Bob");
+const myCode = `console.log("Hello Bob");`;
+console.log(myCode);

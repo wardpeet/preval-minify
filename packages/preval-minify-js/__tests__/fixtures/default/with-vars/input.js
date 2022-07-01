@@ -2,7 +2,7 @@ const minifyJs = require('../../../../dist/minify.macro');
 
 const x = 'Bob'
 
-minifyJs`
+const myCode = minifyJs`
   const hello = 'Hello';
 
   function greetings(name) {
@@ -11,3 +11,5 @@ minifyJs`
 
   console.log(greetings("${x}"));
 `;
+
+console.log(myCode)

@@ -1,1 +1,1 @@
-console.log("Hello Bob");
+const myCode = `console.log("Hello Bob");`;
